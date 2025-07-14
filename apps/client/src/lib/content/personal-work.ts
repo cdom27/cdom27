@@ -1,7 +1,7 @@
 import type { PersonalWork } from '../types/experience/personal-work';
 import ArtAPI from '../../assets/images/art_api.webp';
-import Oxen from '../../assets/images/oxen.webp';
-import Vale from '../../assets/images/vale.png';
+import Ade from '../../assets/images/ade.webp';
+import Vale from '../../assets/images/vale.webp';
 
 export const PERSONAL_WORK: PersonalWork[] = [
   {
@@ -25,7 +25,7 @@ export const PERSONAL_WORK: PersonalWork[] = [
   },
   {
     title: 'Construction Business Site with Admin CRM',
-    image: Oxen,
+    image: Ade,
     description:
       'A dual-purpose site for a construction company to showcase services and manage customer inquiries. Includes a lightweight CRM to track customer communication and assign appointments.',
     stack: [
@@ -41,8 +41,8 @@ export const PERSONAL_WORK: PersonalWork[] = [
       'S3',
       'CloudFront',
     ],
-    site_url: 'https://oxen.cidominguez.com',
-    repo_url: 'https://github.com/cdom27/construction-business-site-with-crm',
+    site_url: 'https://ade.cidominguez.com',
+    repo_url: 'https://github.com/cdom27/ade-react-typescript-frontend',
   },
   {
     title: 'Subscription-Based Habit Tracker',
