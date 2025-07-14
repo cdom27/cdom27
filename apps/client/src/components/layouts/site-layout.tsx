@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router';
 import LinkButton from '../ui/link-button/link-button';
-import { SOCIALS } from '../../lib/social-links';
-import { LINKS } from '../../lib/nav-links';
+import { SOCIALS } from '../../lib/content/social-links';
+import { LINKS } from '../../lib/content/nav-links';
 import Logo from '../ui/icons/logo';
 import { ListIcon, XIcon, ArrowSquareOutIcon } from '@phosphor-icons/react';
 

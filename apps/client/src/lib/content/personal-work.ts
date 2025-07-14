@@ -1,7 +1,7 @@
-import type { PersonalWork } from './types/experience/personal-work';
-import ArtAPI from '../assets/images/art_api.webp';
-import Oxen from '../assets/images/oxen.webp';
-import Vale from '../assets/images/vale.png';
+import type { PersonalWork } from '../types/experience/personal-work';
+import ArtAPI from '../../assets/images/art_api.webp';
+import Oxen from '../../assets/images/oxen.webp';
+import Vale from '../../assets/images/vale.png';
 
 export const PERSONAL_WORK: PersonalWork[] = [
   {

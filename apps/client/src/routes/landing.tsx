@@ -5,9 +5,9 @@ import SiteLayout from '../components/layouts/site-layout';
 import ExperienceCard from '../components/ui/display-cards/experience-card/experience-card';
 import PersonalWorkCard from '../components/ui/display-cards/personal-work/personal-work-card';
 import ProjectCard from '../components/ui/display-cards/project-card/project-card';
-import { EXP } from '../lib/experience';
-import { PERSONAL_WORK } from '../lib/personal-work';
-import { PROJECTS } from '../lib/projects';
+import { EXP } from '../lib/content/experience';
+import { PERSONAL_WORK } from '../lib/content/personal-work';
+import { PROJECTS } from '../lib/content/projects';
 import { ArrowSquareOutIcon, SunHorizonIcon } from '@phosphor-icons/react';
 import Me from '../assets/images/me.webp';
 import Lightbox from 'yet-another-react-lightbox';
@@ -240,7 +240,7 @@ const Landing = () => {
 
         <section className='flex flex-col gap-8'>
           <h3 className='text-2xl sm:text-3xl font-medium intersect-once intersect:motion-preset-slide-down motion-delay-400 motion-duration-1000'>
-            Personal Work
+            Personal Work and Projects
           </h3>
 
           <ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-8 md:gap-x-6 xl:gap-16'>
@@ -254,7 +254,7 @@ const Landing = () => {
 
         <section className='flex flex-col gap-8'>
           <h3 className='text-2xl sm:text-3xl font-medium intersect-once intersect:motion-preset-slide-down motion-delay-400 motion-duration-1000'>
-            Projects
+            More Projects
           </h3>
 
           <ul className='grid grid-cols-1 lg:grid-cols-2 lg:gap-x-2 gap-y-8 xl:gap-16'>

@@ -7,7 +7,7 @@ import FAQCard, {
   FAQCardHeading,
   FAQCardList,
 } from '../components/ui/faq-card/faq-card';
-import { IMAGES } from '../lib/carousel-images';
+import { IMAGES } from '../lib/content/carousel-images';
 
 const About = () => {
   return (
