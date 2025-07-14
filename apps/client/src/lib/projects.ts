@@ -1,4 +1,6 @@
-export const PROJECTS = [
+import type { Project } from './types/experience/project';
+
+export const PROJECTS: Project[] = [
   {
     title: 'Expense Tracking Discord Bot',
     description:
@@ -11,7 +13,7 @@ export const PROJECTS = [
       'PostgreSQL',
       'Fly.io',
     ],
-    repo_url: 'https://github.com/cdom27',
+    repo_url: 'https://github.com/cdom27/expense-tracking-discord-bot',
   },
   {
     title: 'Music Review Bot On BlueSky',
@@ -26,6 +28,6 @@ export const PROJECTS = [
       'Spotify Web API',
       'Fly.io',
     ],
-    repo_url: undefined,
+    repo_url: 'https://github.com/cdom27/bsky-music-review-bot',
   },
 ];
