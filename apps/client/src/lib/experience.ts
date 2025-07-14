@@ -1,4 +1,6 @@
-export const EXP = [
+import type { Experience } from './types/experience/experience';
+
+export const EXP: Experience[] = [
   {
     company: 'Fundamental Edge',
     title: 'Full Stack Web Developer',
