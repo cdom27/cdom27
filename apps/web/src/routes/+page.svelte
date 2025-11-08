@@ -4,5 +4,5 @@
 </svelte:head>
 
 <section>
-    <h1 class="font-sans text-4xl">Hello Svelte</h1>
+    <h1 class="text-4xl">Hello Svelte</h1>
 </section>
