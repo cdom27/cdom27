@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Display";
+    src:
+        url("./Display.woff2") format("woff2"),
+        url("./Display.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
