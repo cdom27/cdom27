@@ -11,8 +11,22 @@
             title: "Unearth",
             href: "https://unearth.news",
             imgSrc: flower1,
-            tagline: "An ai-native news analysis platform.",
+            description: "An ai-native news analysis platform.",
             tech: "Typescript, React, Express, PostgreSQL, Vertex AI SDK, Google Cloud Platform, Docker, GitHub Actions",
+        },
+        {
+            title: "OpenArt",
+            href: "https://openart.work",
+            imgSrc: flower1,
+            description: "A standardized REST API for public domain art.",
+            tech: "Typescript, React, Express, PostgreSQL, Google Cloud Platform, Docker, GitHub Actions",
+        },
+        {
+            title: "Colony",
+            href: "https://colony.money",
+            imgSrc: flower1,
+            description: "A bookkeeping app for resellers.",
+            tech: "Java, Typescript, React, Spring, PostgreSQL, AWS, EC2, S3, GitHub Actions",
         },
     ];
 </script>
@@ -64,25 +78,25 @@
             Connect With Me:
             <A
                 href="https://linkedin.com/in/cdom27"
-                cn="hover:text-sky-600 active:text-sky-600"
+                className="hover:text-sky-600 active:text-sky-600"
             >
                 Linkedin
             </A>,
             <A
                 href="https://github.com/cdom27"
-                cn="hover:text-indigo-600 active:text-indigo-600"
+                className="hover:text-indigo-600 active:text-indigo-600"
             >
                 GitHub
             </A>,
             <A
                 href="mailto:cdom27@outlook.com"
-                cn="hover:text-rose-600 active:text-rose-600"
+                className="hover:text-rose-600 active:text-rose-600"
             >
                 Email
             </A>,
             <A
                 href="/cristian-dominguez-resume.pdf"
-                cn="hover:text-emerald-600 active:text-emerald-600"
+                className="hover:text-emerald-600 active:text-emerald-600"
                 outbound
             >
                 Resume
@@ -93,12 +107,12 @@
     <section class="flex flex-col gap-16">
         <h2 class="font-display text-3xl">Programming</h2>
 
-        <ul>
+        <ul class="grid grid-cols-1 gap-10">
             {#each projects as p}
                 <li>
                     <A
                         href={p.href}
-                        cn="group flex flex-col p-6 gap-6 border-2 border-fg-dark-500"
+                        className="group flex flex-col p-6 gap-6 border-2 border-fg-dark-500"
                         variant="simple"
                     >
                         <h3
@@ -113,8 +127,8 @@
                             alt="A silhouette of a flower with two leaves at the stem"
                             class="max-h-35"
                         />
-                        <p class="font-semibold">{p.tagline}</p>
-                        <p class="font-medium pt-3">{p.tech}</p>
+                        <p class="font-semibold">{p.description}</p>
+                        <p class="font-medium italic">{p.tech}</p>
                     </A>
                 </li>
             {/each}

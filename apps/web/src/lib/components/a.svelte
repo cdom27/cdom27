@@ -2,7 +2,7 @@
     export let href: string;
     export let outbound: boolean | undefined = undefined;
     export let variant: "default" | "simple" = "default";
-    export let cn: string = "";
+    export let className: string = "";
 
     // variant styles
     const style: Record<typeof variant, string> = {
@@ -35,7 +35,7 @@
     {...!isExternal && isHttpLink(href)
         ? { "data-sveltekit-preload-data": preload }
         : {}}
-    class={`transition-colors duration-300 ${style[variant]} ${cn}`}
+    class={`transition-colors duration-300 ${style[variant]} ${className}`}
 >
     <slot />
 </a>
