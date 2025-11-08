@@ -1,7 +1,15 @@
 <script lang="ts">
     export let href: string;
     export let outbound: boolean | undefined = undefined;
+    export let variant: "default" | "simple" = "default";
     export let cn: string = "";
+
+    // variant styles
+    const style: Record<typeof variant, string> = {
+        default:
+            "font-bold underline underline-offset-4 hover:decoration-dotted active:decoration-dotted",
+        simple: "font-normal",
+    };
 
     // detect non http hrefs (mailto:, tel:)
     function isHttpLink(href: string): boolean {
@@ -27,7 +35,7 @@
     {...!isExternal && isHttpLink(href)
         ? { "data-sveltekit-preload-data": preload }
         : {}}
-    class={`font-bold underline underline-offset-4 hover:decoration-dotted active:decoration-dotted transition-colors duration-300 ${cn}`}
+    class={`transition-colors duration-300 ${style[variant]} ${cn}`}
 >
     <slot />
 </a>
