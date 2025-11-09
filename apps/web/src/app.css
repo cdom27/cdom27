@@ -10,6 +10,7 @@
 }
 
 @theme {
+    --color-fg-dark-300: #a3a39e;
     --color-fg-dark-500: #26251e;
     --color-bg-light-500: #f7f7f4;
 

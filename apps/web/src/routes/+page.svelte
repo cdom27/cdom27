@@ -28,6 +28,37 @@
             description: "A bookkeeping app for resellers.",
             tech: "Java, Typescript, React, Spring, PostgreSQL, AWS, EC2, S3, GitHub Actions",
         },
+        {
+            title: "Macro Calculator",
+            href: "https://github.com/cdom27",
+            imgSrc: null,
+            description:
+                "Get macronutrient guidelines based on your goals within your terminal.",
+            tech: "Python",
+        },
+        {
+            title: "X-Aura",
+            href: "https://github.com/cdom27",
+            imgSrc: null,
+            description:
+                "Generate a personalized reading based on your X profile.",
+            tech: "Bun, Typescript, Svelte, Hono",
+        },
+        {
+            title: "Expense Tracker Bot",
+            href: "https://github.com/cdom27",
+            imgSrc: null,
+            description:
+                "Track your expenses through your Discord guild using chat commands.",
+            tech: "Bun, Typescript, PostgreSQL, Discord.js",
+        },
+        {
+            title: "Music Review Bot",
+            href: "https://github.com/cdom27",
+            imgSrc: null,
+            description: "Automated music review posts on BlueSky.",
+            tech: "Typescript, Node, ATProto, PostgreSQL, Spotify Web API",
+        },
     ];
 </script>
 
@@ -108,11 +139,11 @@
         <h2 class="font-display text-3xl">Programming</h2>
 
         <ul class="grid grid-cols-1 gap-10">
-            {#each projects as p}
+            {#each projects.slice(0, 3) as p}
                 <li>
                     <A
                         href={p.href}
-                        className="group flex flex-col p-6 gap-6 border-2 border-fg-dark-500"
+                        className="group flex flex-col p-6 gap-3 border-2 border-fg-dark-500"
                         variant="simple"
                     >
                         <h3
@@ -124,9 +155,33 @@
                         </h3>
                         <img
                             src={p.imgSrc}
-                            alt="A silhouette of a flower with two leaves at the stem"
-                            class="max-h-35"
+                            alt="A silhouette of a flower"
+                            class="max-h-35 my-3"
                         />
+                        <p class="font-semibold">{p.description}</p>
+                        <p class="font-medium italic">{p.tech}</p>
+                    </A>
+                </li>
+            {/each}
+        </ul>
+
+        <p class="text-center text-fg-dark-300">Other projects</p>
+
+        <ul class="grid grid-cols-1 gap-10">
+            {#each projects.slice(3) as p}
+                <li>
+                    <A
+                        href={p.href}
+                        className="group flex flex-col pb-6 gap-3 border-b-2 border-fg-dark-500"
+                        variant="simple"
+                    >
+                        <h3
+                            class="flex items-center gap-2 font-normal font-display text-2xl underline underline-offset-4"
+                        >
+                            <span>{p.title}</span><ArrowSquareOut
+                                className="size-6 stroke-fg-dark-500 border-none"
+                            />
+                        </h3>
                         <p class="font-semibold">{p.description}</p>
                         <p class="font-medium italic">{p.tech}</p>
                     </A>
