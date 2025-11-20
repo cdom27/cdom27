@@ -4,34 +4,36 @@
     import ArrowSquareOut from "$lib/icons/arrow-square-out.svelte";
     import flowerl from "$lib/illustrations/flower-main-l.svg";
     import flowerr from "$lib/illustrations/flower-main-r.svg";
-    import flower1 from "$lib/illustrations/flower-1.svg";
+    import Daisy from "$lib/illustrations/daisy.svelte";
+    import Tulip from "$lib/illustrations/tulip.svelte";
+    import Poppy from "$lib/illustrations/poppy.svelte";
 
     $: projects = [
         {
             title: "Unearth",
             href: "https://unearth.news",
-            imgSrc: flower1,
+            thumb: Daisy,
             description: "An ai-native news analysis platform.",
             tech: "Typescript, React, Express, PostgreSQL, Vertex AI SDK, Google Cloud Platform, Docker, GitHub Actions",
         },
         {
             title: "OpenArt",
             href: "https://openart.work",
-            imgSrc: flower1,
+            thumb: Tulip,
             description: "A standardized REST API for public domain art.",
             tech: "Typescript, React, Express, PostgreSQL, Google Cloud Platform, Docker, GitHub Actions",
         },
         {
             title: "Colony",
             href: "https://colony.money",
-            imgSrc: flower1,
+            thumb: Poppy,
             description: "A bookkeeping app for resellers.",
             tech: "Java, Typescript, React, Spring, PostgreSQL, AWS, EC2, S3, GitHub Actions",
         },
         {
             title: "Macro Calculator",
             href: "https://github.com/cdom27",
-            imgSrc: null,
+            thumb: null,
             description:
                 "Get macronutrient guidelines based on your goals within your terminal.",
             tech: "Python",
@@ -39,7 +41,7 @@
         {
             title: "X-Aura",
             href: "https://github.com/cdom27",
-            imgSrc: null,
+            thumb: null,
             description:
                 "Generate a personalized reading based on your X profile.",
             tech: "Bun, Typescript, Svelte, Hono",
@@ -47,7 +49,7 @@
         {
             title: "Expense Tracker Bot",
             href: "https://github.com/cdom27",
-            imgSrc: null,
+            thumb: null,
             description:
                 "Track your expenses through your Discord guild using chat commands.",
             tech: "Bun, Typescript, PostgreSQL, Discord.js",
@@ -55,7 +57,7 @@
         {
             title: "Music Review Bot",
             href: "https://github.com/cdom27",
-            imgSrc: null,
+            thumb: null,
             description: "Automated music review posts on BlueSky.",
             tech: "Typescript, Node, ATProto, PostgreSQL, Spotify Web API",
         },
@@ -153,10 +155,9 @@
                                 className="size-6 stroke-fg-dark-500 border-none"
                             />
                         </h3>
-                        <img
-                            src={p.imgSrc}
-                            alt="A silhouette of a flower"
-                            class="max-h-35 my-3"
+                        <svelte:component
+                            this={p.thumb}
+                            className="max-h-40 my-3 fill-fg-dark-500"
                         />
                         <p class="font-semibold">{p.description}</p>
                         <p class="font-medium italic">{p.tech}</p>
