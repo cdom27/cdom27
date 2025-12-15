@@ -1,37 +1,37 @@
-import { ArrowSquareOutIcon } from '@phosphor-icons/react';
-import Meta from '../components/seo/meta';
-import SiteLayout from '../components/layouts/site-layout';
-import Carousel from '../components/ui/carousel/carousel';
+import { ArrowSquareOutIcon } from "@phosphor-icons/react";
+import Meta from "../components/seo/meta";
+import SiteLayout from "../components/layouts/site-layout";
+import Carousel from "../components/ui/carousel/carousel";
 import FAQCard, {
   FAQCardBody,
   FAQCardHeading,
   FAQCardList,
-} from '../components/ui/faq-card/faq-card';
-import { IMAGES } from '../lib/content/carousel-images';
+} from "../components/ui/faq-card/faq-card";
+import { IMAGES } from "../lib/content/carousel-images";
 
 const About = () => {
   return (
     <SiteLayout>
       <Meta
-        title='Cristian Dominguez, Personal Life'
-        description='Lean more about what drives Cristian as a developer, his journey into programming, and his educational background as a Software Developer based in San Diego, CA.'
-        canonicalUrl='https://cidominguez.com/about'
+        title="Cristian Dominguez, Personal Life"
+        description="Lean more about what drives Cristian as a developer, his journey into programming, and his educational background as a Software Developer based in San Diego, CA."
+        canonicalUrl="https://cidominguez.com/about"
       />
-      <section className='py-28 lg:py-50 px-4 xs:px-10 lg:px-20 w-full max-w-[1365px] mx-auto flex flex-col gap-14'>
-        <h1 className='font-medium'>
-          <span className='block text-base sm:text-lg motion-delay-200 motion-preset-fade motion-duration-2000'>
+      <section className="py-28 lg:py-50 px-4 xs:px-10 lg:px-20 w-full max-w-[1365px] mx-auto flex flex-col gap-14">
+        <h1 className="font-medium">
+          <span className="block text-base sm:text-lg motion-delay-200 motion-preset-fade motion-duration-2000">
             Hey again,
           </span>
-          <span className='block text-3xl sm:text-4xl md:text-5xl motion-delay-100 motion-preset-fade motion-duration-2000'>
+          <span className="block text-3xl sm:text-4xl md:text-5xl motion-delay-100 motion-preset-fade motion-duration-2000">
             I&apos;m Cristian. Thanks for dropping by!
           </span>
         </h1>
 
         <Carousel images={IMAGES} autoPlaySpeed={5000} />
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-14'>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14">
           <FAQCard>
-            <FAQCardHeading level='h2'>Where I&apos;ve studied</FAQCardHeading>
+            <FAQCardHeading level="h2">Where I&apos;ve studied</FAQCardHeading>
             <FAQCardBody>
               I&apos;m currently a senior at Western Governors University,
               finishing up my <b>B.S. in Software Engineering</b>. Before that,
@@ -52,24 +52,24 @@ const About = () => {
           </FAQCard>
 
           <FAQCard>
-            <FAQCardHeading level='h2'>
+            <FAQCardHeading level="h2">
               What kind of developer are you?
             </FAQCardHeading>
             <FAQCardBody>
               I work full-stack but have found myself leaning more into backend
               development lately. I&apos;m big on systems that make sense, APIs
               that are a pleasure to use, and logic that holds up under
-              pressure. Right now, I&apos;m building something called{' '}
+              pressure. Right now, I&apos;m building something called{" "}
               <a
-                href='https://art.cidominguez.com'
-                target='_blank'
-                rel='noopener noreferrer'
-                className='font-semibold inline-flex items-center gap-2 hover:underline hover:text-link-active transition-all duration-300 group'
+                href="https://art.cidominguez.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold inline-flex items-center gap-2 hover:underline hover:text-link-active transition-all duration-300 group"
               >
                 <span>The Art API</span>
                 <ArrowSquareOutIcon
-                  className='size-4 stroke-bg-dark group-hover:motion-preset-seesaw motion-loop-once motion-duration-500 motion-delay-200'
-                  aria-hidden='true'
+                  className="size-4 stroke-bg-dark group-hover:motion-preset-seesaw motion-loop-once motion-duration-500 motion-delay-200"
+                  aria-hidden="true"
                 />
               </a>
               , which pulls together public domain data about artists and their
@@ -79,7 +79,7 @@ const About = () => {
           </FAQCard>
 
           <FAQCard>
-            <FAQCardHeading level='h2'>
+            <FAQCardHeading level="h2">
               How did you get into programming?
             </FAQCardHeading>
             <FAQCardBody>
@@ -92,7 +92,7 @@ const About = () => {
           </FAQCard>
 
           <FAQCard>
-            <FAQCardHeading level='h2'>
+            <FAQCardHeading level="h2">
               What do you outside of programming?
             </FAQCardHeading>
             <FAQCardBody>
@@ -106,7 +106,7 @@ const About = () => {
           </FAQCard>
 
           <FAQCard>
-            <FAQCardHeading level='h2'>On a personal note...</FAQCardHeading>
+            <FAQCardHeading level="h2">On a personal note...</FAQCardHeading>
             <FAQCardBody>
               I live in San Diego, CA with a calico named Peanut, who turns one
               in July, my girlfriend&apos;s tortie, Paddles, and a dog named
