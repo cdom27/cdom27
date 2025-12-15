@@ -10,13 +10,6 @@ interface SiteLayoutProps {
   children: React.ReactNode;
 }
 
-const delayClasses = [
-  "motion-delay-550",
-  "motion-delay-600",
-  "motion-delay-650",
-  "motion-delay-700",
-];
-
 const SiteLayout = ({ children }: SiteLayoutProps) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
