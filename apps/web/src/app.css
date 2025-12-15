@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import "tailwindcss";
-@import "./lib/fonts/fonts.css";
 
 :root {
     background: var(--color-bg-light-500);
@@ -10,10 +9,9 @@
 }
 
 @theme {
-    --color-fg-dark-300: #a3a39e;
-    --color-fg-dark-500: #26251e;
-    --color-bg-light-500: #f7f7f4;
+    --color-content-500: #26251e;
+    --color-content-300: #a3a39e;
+    --color-content-100: #f7f7f4;
 
     --font-family-sans: "Open Sans", sans-serif;
-    --font-display: "Display", serif;
 }
