@@ -2,7 +2,7 @@
 ```
 > Hi there
 > AS in Web Development
-> Current BS in Software Engineering
+> Returning BS in Software Engineering
 >
 > Typescript-adjacent APIs and frontend, learning zig and c
 >
