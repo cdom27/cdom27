@@ -1,3 +1,0 @@
-#todo
-
-- meta for pages
