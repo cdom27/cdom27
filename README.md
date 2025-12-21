@@ -4,9 +4,10 @@
 > AS in Web Development
 > Returning BS in Software Engineering
 >
-> Typescript-adjacent APIs and frontend, learning zig and c
+> Full-Stack Engineer (TypeScript/React/Node/PostgreSQL) merging design and UX thinking with solid backend architecture.
+> Also fond of the Zig language
 >
-> Literature and ceramics when I'm not programming
+> Reading (classics & tech) and ceramics when I'm not programming
 ```
 
 
