@@ -15,25 +15,3 @@ dist-ssr
 .env.*
 !.env.example
 !.env.test
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-Thumbs.db
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-vite.config.js.timestamp-*
-vite.config.ts.timestamp-*
-
-# Output
-.output
-.vercel
-.netlify
-.wrangler
-.svelte-kit
-build
