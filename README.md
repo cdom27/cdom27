@@ -1,11 +1,11 @@
 ##### Cristian Dominguez
 ```
 > Hi there
-> AS in Web Development
+> AS in Web Development & AA in Interaction Design
 > Returning BS in Software Engineering
 >
-> Full-Stack Engineer (TypeScript/React/Node/PostgreSQL) merging design and UX thinking with solid backend architecture.
-> Also fond of the Zig language
+> Product-focused Engineer merging design and UX thinking with solid backend architecture.
+> Typescript, React, Node.js, Go, PostgreSQL
 >
 > Reading (classics & tech) and ceramics when I'm not programming
 ```
