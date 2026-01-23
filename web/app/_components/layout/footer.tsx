@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="px-4 sm:px-12 py-2 sm:pb-6 sm:pt-0">
-      <div className="flex flex-col lg:flex-row justify-between gap-6 pt-6 pb-4 sm:pb-0 xl:max-w-300 2xl:max-w-400 xl:mx-auto border-t border-black">
+    <footer className="px-4 sm:px-12 pb-2 sm:pb-6">
+      <div className="flex flex-col lg:flex-row justify-between gap-6 pt-2 sm:pt-6 xl:max-w-300 2xl:max-w-400 xl:mx-auto border-t border-black">
         <Link href="/" className="group flex items-center gap-2">
           <img
             src="/logo.svg"

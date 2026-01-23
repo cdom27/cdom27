@@ -7,8 +7,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="px-4 sm:px-12 py-2 sm:py-6">
-      <div className="flex justify-between items-center lg:pb-6 xl:max-w-300 2xl:max-w-400 xl:mx-auto lg:border-b lg:border-black">
+    <header className="px-4 sm:px-12 pt-2 sm:pt-6">
+      <div className="flex justify-between items-center pb-2 sm:pb-6  xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black">
         <Link href="/" className="group flex items-center gap-2">
           <img
             src="/logo.svg"
@@ -99,7 +99,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="lg:hidden flex flex-col justify-center gap-1 size-5.5"
+          className="lg:hidden flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
           onClick={() => setOpen(!open)}
         >
           <div className="h-0.5 bg-black w-full" />
@@ -119,18 +119,20 @@ export default function Header() {
         ${open ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
+          <Link href="/" className="group flex items-center gap-2">
             <img
               src="/logo.svg"
               alt="Cristian Dominguez Logo"
-              className="w-10 h-5.5"
+              className="w-10 h-5.5 transition-transform duration-150 ease-in-out origin-left group-hover:scale-x-110 group-active:scale-x-95"
             />
 
-            <span className="font-semibold text-lg">Cristian Dominguez</span>
+            <span className="font-semibold text-lg transition-transform duration-150 ease-in-out group-hover:translate-x-1">
+              Cristian Dominguez
+            </span>
           </Link>
 
           <button
-            className="flex flex-col justify-center gap-1 size-5.5"
+            className="flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
             onClick={() => setOpen(!open)}
           >
             <div className="h-0.5 bg-white w-full" />
@@ -141,13 +143,23 @@ export default function Header() {
 
         <ul className="flex flex-col gap-2 pt-6 pb-6 border-b border-black">
           <li>
-            <Link href="/#work" className="font-semibold">
-              WORK
+            <Link
+              href="/#work"
+              className="font-semibold text-black hover:text-lime-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+            >
+              <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                WORK
+              </span>
             </Link>
           </li>
           <li>
-            <Link href="/#about" className="font-semibold">
-              ABOUT
+            <Link
+              href="/#about"
+              className="font-semibold text-black hover:text-teal-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+            >
+              <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                ABOUT
+              </span>
             </Link>
           </li>
         </ul>
@@ -156,33 +168,52 @@ export default function Header() {
           <li>
             <a
               href="https://linkedin.com/in/cdom27"
-              className="font-semibold underline underline-offset-3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-blue-500 transition-colors duration-700 hover:duration-150 ease-in-out"
             >
-              LINKEDIN
+              <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                LINKEDIN
+              </span>
             </a>
           </li>
-          <li>
-            <a
-              href="https://github.com/cdom27"
-              className="font-semibold underline underline-offset-3"
-            >
-              GITHUB
-            </a>
-          </li>
+
           <li>
             <a
               href="mailto:cdom27@outlook.com"
-              className="font-semibold underline underline-offset-3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-indigo-500 transition-colors duration-700 hover:duration-150 ease-in-out"
             >
-              CDOM27@OUTLOOK.COM
+              <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                CDOM27@OUTLOOK.COM
+              </span>
             </a>
           </li>
+
+          <li>
+            <a
+              href="https://github.com/cdom27"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-violet-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+            >
+              <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                GITHUB
+              </span>
+            </a>
+          </li>
+
           <li>
             <a
               href="/cristian-dominguez-resume.pdf"
-              className="font-semibold underline underline-offset-3"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold hover:text-fuchsia-500 transition-colors duration-700 hover:duration-150 ease-in-out"
             >
-              RESUME
+              <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                RESUME
+              </span>
             </a>
           </li>
         </ul>
