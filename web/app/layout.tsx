@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="antialiased scroll-smooth font-inter">
         <Header />
 
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen px-4 sm:px-12 pt-6">{children}</main>
 
         <Footer />
       </body>
