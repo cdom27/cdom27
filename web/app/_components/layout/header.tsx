@@ -9,14 +9,14 @@ export default function Header() {
   return (
     <header className="px-4 sm:px-12 py-2 sm:py-6">
       <div className="flex justify-between items-center lg:pb-6 xl:max-w-300 2xl:max-w-400 xl:mx-auto lg:border-b lg:border-black">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="group flex items-center gap-2">
           <img
             src="/logo.svg"
             alt="Cristian Dominguez Logo"
-            className="w-10 h-5.5"
+            className="w-10 h-5.5 transition-transform duration-150 ease-in-out group-hover:scale-x-120 group-active:scale-x-95"
           />
 
-          <span className="font-fle text-lg lg:text-xl">
+          <span className="font-semibold text-lg transition-transform duration-150 ease-in-out group-hover:translate-x-1">
             Cristian Dominguez
           </span>
         </Link>
@@ -24,49 +24,67 @@ export default function Header() {
         <nav className="hidden lg:flex gap-4">
           <ul className="grid grid-flow-col auto-cols-max grid-rows-2 gap-y-2 gap-x-10 text-sm">
             <li>
-              <Link href="/#work" className="font-semibold">
-                WORK
+              <Link
+                href="/#work"
+                className="font-semibold text-black hover:text-lime-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+              >
+                <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                  WORK
+                </span>
               </Link>
             </li>
             <li>
-              <Link href="/#about" className="font-semibold">
-                ABOUT
+              <Link
+                href="/#about"
+                className="font-semibold text-black hover:text-teal-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+              >
+                <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                  ABOUT
+                </span>
               </Link>
             </li>
 
             <li>
               <a
                 href="https://linkedin.com/in/cdom27"
-                className="font-semibold underline underline-offset-3"
+                className="font-semibold hover:text-blue-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
-                LINKEDIN
+                <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                  LINKEDIN
+                </span>
               </a>
             </li>
 
             <li>
               <a
                 href="mailto:cdom27@outlook.com"
-                className="font-semibold underline underline-offset-3"
+                className="font-semibold hover:text-indigo-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
-                CDOM27@OUTLOOK.COM
+                <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                  CDOM27@OUTLOOK.COM
+                </span>
               </a>
             </li>
 
             <li>
               <a
                 href="https://github.com/cdom27"
-                className="font-semibold underline underline-offset-3"
+                className="font-semibold hover:text-violet-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
-                GITHUB
+                <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                  GITHUB
+                </span>
               </a>
             </li>
 
             <li>
               <a
                 href="/cristian-dominguez-resume.pdf"
-                className="font-semibold underline underline-offset-3"
+                className="font-semibold hover:text-fuchsia-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
-                RESUME
+                <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
+                  RESUME
+                </span>
               </a>
             </li>
           </ul>
