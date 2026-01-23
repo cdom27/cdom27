@@ -47,6 +47,8 @@ export default function Header() {
             <li>
               <a
                 href="https://linkedin.com/in/cdom27"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-semibold hover:text-blue-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
                 <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
@@ -58,6 +60,8 @@ export default function Header() {
             <li>
               <a
                 href="mailto:cdom27@outlook.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-semibold hover:text-indigo-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
                 <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
@@ -69,6 +73,8 @@ export default function Header() {
             <li>
               <a
                 href="https://github.com/cdom27"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-semibold hover:text-violet-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
                 <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
@@ -80,6 +86,8 @@ export default function Header() {
             <li>
               <a
                 href="/cristian-dominguez-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="font-semibold hover:text-fuchsia-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
                 <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
