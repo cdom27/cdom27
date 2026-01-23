@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "./_components/layout/header";
 
 export const metadata: Metadata = {
   title: "Cristian Dominguez | Product-focused Engineer and Designer",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased scroll-smooth font-inter">
-        <header>header</header>
+        <Header />
         <main>{children}</main>
         <footer>footer</footer>
       </body>
