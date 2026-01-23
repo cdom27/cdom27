@@ -126,7 +126,7 @@ export default function Header() {
               className="w-10 h-5.5"
             />
 
-            <span className="font-fle text-lg">Cristian Dominguez</span>
+            <span className="font-semibold text-lg">Cristian Dominguez</span>
           </Link>
 
           <button
