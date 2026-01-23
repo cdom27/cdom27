@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 import Header from "./_components/layout/header";
+import Footer from "./_components/layout/footer";
 
 export const metadata: Metadata = {
   title: "Cristian Dominguez | Product-focused Engineer and Designer",
@@ -17,8 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased scroll-smooth font-inter">
         <Header />
-        <main>{children}</main>
-        <footer>footer</footer>
+
+        <main className="min-h-screen">{children}</main>
+
+        <Footer />
       </body>
     </html>
   );
