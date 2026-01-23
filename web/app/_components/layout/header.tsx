@@ -99,12 +99,12 @@ export default function Header() {
         </nav>
 
         <button
-          className="lg:hidden flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
+          className="group lg:hidden flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
           onClick={() => setOpen(!open)}
         >
-          <div className="h-0.5 bg-black w-full" />
-          <div className="h-0.5 bg-black w-full" />
-          <div className="h-0.5 bg-black w-full" />
+          <div className="h-0.5 bg-black w-full transition-transform duration-150 ease-in-out origin-right group-hover:scale-x-140 group-active:scale-x-150" />
+          <div className="h-0.5 bg-black w-full transition-transform duration-150 ease-in-out origin-right group-hover:scale-x-140 group-active:scale-x-150" />
+          <div className="h-0.5 bg-black w-full transition-transform duration-150 ease-in-out origin-right group-hover:scale-x-140 group-active:scale-x-150" />
         </button>
       </div>
 
@@ -132,11 +132,11 @@ export default function Header() {
           </Link>
 
           <button
-            className="flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
+            className="group flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
             onClick={() => setOpen(!open)}
           >
             <div className="h-0.5 bg-white w-full" />
-            <div className="h-0.5 bg-black w-full" />
+            <div className="h-0.5 bg-black w-full transition-transform duration-150 ease-in-out origin-right group-hover:scale-x-140 group-active:scale-x-150" />
             <div className="h-0.5 bg-white w-full" />
           </button>
         </div>
