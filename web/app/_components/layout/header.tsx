@@ -13,7 +13,7 @@ export default function Header() {
           <img
             src="/logo.svg"
             alt="Cristian Dominguez Logo"
-            className="w-10 h-5.5 transition-transform duration-150 ease-in-out group-hover:scale-x-120 group-active:scale-x-95"
+            className="w-10 h-5.5 transition-transform duration-150 ease-in-out origin-left group-hover:scale-x-110 group-active:scale-x-95"
           />
 
           <span className="font-semibold text-lg transition-transform duration-150 ease-in-out group-hover:translate-x-1">
