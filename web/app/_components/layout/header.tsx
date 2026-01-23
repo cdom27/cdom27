@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className="px-4 sm:px-12 pt-2 sm:pt-6">
-      <div className="flex justify-between items-center pb-2 sm:pb-6  xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black">
+      <div className="flex justify-between items-center pb-2 sm:pb-6 xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black">
         <Link href="/" className="group flex items-center gap-2">
           <img
             src="/logo.svg"
