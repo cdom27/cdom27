@@ -1,8 +1,10 @@
+import CellGrid from "./_components/ui/cell-grid";
+
 export default function Home() {
   return (
     <>
       <div className="xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black pb-24">
-        <div className="h-36 w-full bg-stone-500" />
+        <CellGrid />
 
         <h1 className="font-fle text-2xl lg:text-5xl 2xl:text-6xl pt-6">
           Cristian Dominguez is a design-forward Frontend Engineer shipping
