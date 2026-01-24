@@ -111,8 +111,9 @@ export default function Header() {
         </nav>
 
         <button
+          title="Open navigation menu"
           className="group lg:hidden flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
-          onClick={() => setOpen(!open)}
+          onClick={() => setOpen(true)}
         >
           <div className="h-0.5 bg-black w-full transition-transform duration-150 ease-in-out origin-right group-hover:scale-x-140 group-active:scale-x-150" />
           <div className="h-0.5 bg-black w-full transition-transform duration-150 ease-in-out origin-right group-hover:scale-x-140 group-active:scale-x-150" />
@@ -156,8 +157,9 @@ export default function Header() {
           </Link>
 
           <button
+            title="Close navigation menu"
             className="group flex flex-col justify-center gap-1 size-5.5 cursor-pointer"
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpen(false)}
           >
             <div className="h-0.5 bg-white w-full" />
             <div className="h-0.5 bg-black w-full transition-transform duration-150 ease-in-out origin-right group-hover:scale-x-140 group-active:scale-x-150" />
