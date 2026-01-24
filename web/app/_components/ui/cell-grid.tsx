@@ -172,7 +172,7 @@ export default function CellGrid() {
           key={cell.id}
           onMouseEnter={() => setHoveredId(cell.id)}
           onMouseLeave={() => setHoveredId("")}
-          className={`${cell.color} transition-all duration-700 hover:duration-50 cursor-pointer ${
+          className={`${cell.color} transition-all duration-700 hover:duration-0 cursor-pointer ${
             hoveredId === cell.id
               ? "hover:scale-y-150 hover:z-20"
               : "group-hover:bg-stone-100 group-hover:m-0.5 group-hover:rounded-xs"
