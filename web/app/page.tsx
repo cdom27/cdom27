@@ -1,7 +1,10 @@
 import Link from "next/link";
 import CellGrid from "./_components/ui/cell-grid";
 import Image from "next/image";
-import UNEARTH from "../public/unearth.webp";
+import UNEARTH from "../public/unearth.png";
+import COLONY from "../public/colony.png";
+import ADE from "../public/ade.png";
+import TENKA from "../public/tenka.png";
 
 const work = [
   {
@@ -25,7 +28,7 @@ const work = [
   },
   {
     id: 1,
-    imgSrc: "",
+    imgSrc: null,
     title: "Open Artwork",
     duration: "May 2025 - Present",
     description: `A developer-friendly public-domain art API with a lightweight,
@@ -48,7 +51,7 @@ const projects = [
   {
     id: 0,
     type: "design",
-    imgSrc: "",
+    imgSrc: TENKA,
     title: "Tenka",
     description:
       "Complete e-commerce flow concept for a Japanese stationery brand, covering search, product pages, auth, cart, and checkout across mobile and desktop.",
@@ -59,7 +62,7 @@ const projects = [
   {
     id: 1,
     type: "full",
-    imgSrc: "",
+    imgSrc: ADE,
     title: "Ade Construction",
     description:
       "SEO-focused marketing site concept for a fictional San Diego construction company, with service pages, galleries, and home listing detail pages.",
@@ -70,7 +73,7 @@ const projects = [
   {
     id: 2,
     type: "design",
-    imgSrc: "",
+    imgSrc: COLONY,
     title: "Colony",
     description:
       "Responsive dashboard concept for collaborative budgeting. Designed for roommates with shared goals, real-time visibility, and notifications.",
@@ -78,17 +81,17 @@ const projects = [
     slug: "colony",
     url: "",
   },
-  {
-    id: 3,
-    type: "design",
-    imgSrc: "",
-    title: "Plant-Based San Diego",
-    description:
-      "Modern, mobile-first landing page for a San Diego plant-based guide; built to make finding restaurants, and submitting community picks feel simple and current.",
-    tags: ["Web Design", "Landing Page", "UX/UI", "Responsive", "SEO"],
-    slug: "plant-based-san-diego",
-    url: "",
-  },
+  // {
+  //   id: 3,
+  //   type: "design",
+  //   imgSrc: null,
+  //   title: "Plant-Based San Diego",
+  //   description:
+  //     "Modern, mobile-first landing page for a San Diego plant-based guide; built to make finding restaurants, and submitting community picks feel simple and current.",
+  //   tags: ["Web Design", "Landing Page", "UX/UI", "Responsive", "SEO"],
+  //   slug: "plant-based-san-diego",
+  //   url: "",
+  // },
 ];
 
 export default function Home() {
@@ -114,18 +117,18 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-6 gap-18">
           {work.map((work) => (
             <div className="flex flex-col gap-1" key={work.id}>
-              {work.imgSrc != "" ? (
+              {work.imgSrc ? (
                 <div className="overflow-hidden">
                   <Image
                     src={work.imgSrc}
                     alt={`${work.title} designs on various devices`}
-                    className="h-62 w-full object-cover transition-all hover:scale-110 hover:rotate-2 duration-700 ease-in-out"
-                    height={250}
-                    width={375}
+                    className="h-82 w-full object-cover transition-all hover:scale-110 hover:rotate-2 duration-700 ease-in-out"
+                    height={1000}
+                    width={1000}
                   />
                 </div>
               ) : (
-                <div className="h-62 w-full bg-stone-500" />
+                <div className="h-82 w-full bg-stone-500" />
               )}
 
               <div className="flex flex-col lg:grow">
@@ -188,7 +191,19 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-6 gap-18">
           {projects.map((proj) => (
             <div className="flex flex-col gap-1" key={proj.id}>
-              <div className="h-62 w-full bg-stone-500" />
+              {proj.imgSrc ? (
+                <div className="overflow-hidden">
+                  <Image
+                    src={proj.imgSrc}
+                    alt={`${proj.title} designs on various devices`}
+                    className="h-62 w-full object-cover transition-all hover:scale-110 hover:rotate-2 duration-700 ease-in-out"
+                    height={1000}
+                    width={1000}
+                  />
+                </div>
+              ) : (
+                <div className="h-62 w-full bg-stone-500" />
+              )}
 
               <div className="flex flex-col lg:grow">
                 <h3 className="font-fle text-2xl lg:text-3xl pt-2">
