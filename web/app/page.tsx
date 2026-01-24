@@ -1,4 +1,95 @@
+import Link from "next/link";
 import CellGrid from "./_components/ui/cell-grid";
+import Image from "next/image";
+import UNEARTH from "../public/unearth.webp";
+
+const work = [
+  {
+    id: 0,
+    imgSrc: UNEARTH,
+    title: "Unearth News",
+    duration: "Sept. 2025 - Present",
+    description: `AI-powered news analysis with a mobile-first, accessible UI. Users
+    paste a URL to get a clear breakdown of claims/framing plus
+    related coverage and source credibility context.`,
+    tags: [
+      "TypeScript",
+      "React",
+      "Node.js / Express",
+      "PostrgeSQL",
+      "GCP",
+      "Docker",
+    ],
+    liveUrl: "https://unearth.news",
+    codebaseUrl: "https://github.com/cdom27/unearth_news",
+  },
+  {
+    id: 1,
+    imgSrc: "",
+    title: "Open Artwork",
+    duration: "May 2025 - Present",
+    description: `A developer-friendly public-domain art API with a lightweight,
+    responsive front-end for browsing clean metadata (artist, medium,
+    year) and optimized images.`,
+    tags: [
+      "TypeScript",
+      "React",
+      "Node.js / Express",
+      "PostrgeSQL",
+      "GCP",
+      "Docker",
+    ],
+    liveUrl: "https://openart.work",
+    codebaseUrl: "https://github.com/cdom27/art-api",
+  },
+];
+
+const projects = [
+  {
+    id: 0,
+    type: "design",
+    imgSrc: "",
+    title: "Tenka",
+    description:
+      "Complete e-commerce flow concept for a Japanese stationery brand, covering search, product pages, auth, cart, and checkout across mobile and desktop.",
+    tags: ["Web Design", "E-commerce", "Responsive", "SEO", "UX/UI"],
+    slug: "tenka-stationery",
+    url: "",
+  },
+  {
+    id: 1,
+    type: "full",
+    imgSrc: "",
+    title: "Ade Construction",
+    description:
+      "SEO-focused marketing site concept for a fictional San Diego construction company, with service pages, galleries, and home listing detail pages.",
+    tags: ["Web Design", "Marketing Site", "Responsive", "SEO"],
+    slug: "ade-construction",
+    url: "https://github.com/cdom27/ade-react-typescript-frontend",
+  },
+  {
+    id: 2,
+    type: "design",
+    imgSrc: "",
+    title: "Colony",
+    description:
+      "Responsive dashboard concept for collaborative budgeting. Designed for roommates with shared goals, real-time visibility, and notifications.",
+    tags: ["Dashboard UI", "UX/UI", "Product Design", "Responsive"],
+    slug: "colony",
+    url: "",
+  },
+  {
+    id: 3,
+    type: "design",
+    imgSrc: "",
+    title: "Plant-Based San Diego",
+    description:
+      "Modern, mobile-first landing page for a San Diego plant-based guide; built to make finding restaurants, and submitting community picks feel simple and current.",
+    tags: ["Web Design", "Landing Page", "UX/UI", "Responsive", "SEO"],
+    slug: "plant-based-san-diego",
+    url: "",
+  },
+];
 
 export default function Home() {
   return (
@@ -13,17 +104,143 @@ export default function Home() {
       </div>
 
       <div className="xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black pb-24 pt-6">
-        <h2 className="font-semibold">INDEPENDENT WORK</h2>
+        <div className="flex flex-col md:flex-row gap-2">
+          <h2 className="font-semibold">INDEPENDENT WORK</h2>
+          <p className="text-gray-400 md:pl-2 md:border-l md:border-black">
+            ACTIVELY MAINTAINING CODE AND DESIGNING UI
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 pt-6 gap-18">
+          {work.map((work) => (
+            <div className="flex flex-col gap-1" key={work.id}>
+              {work.imgSrc != "" ? (
+                <div className="overflow-hidden">
+                  <Image
+                    src={work.imgSrc}
+                    alt={`${work.title} designs on various devices`}
+                    className="h-62 w-full object-cover transition-all hover:scale-110 hover:rotate-2 duration-700 ease-in-out"
+                    height={250}
+                    width={375}
+                  />
+                </div>
+              ) : (
+                <div className="h-62 w-full bg-stone-500" />
+              )}
+
+              <div className="flex flex-col lg:grow">
+                <h3 className="font-fle text-2xl lg:text-3xl pt-2">
+                  {work.title}
+                </h3>
+
+                <em>{work.duration}</em>
+
+                <p className="pt-2">{work.description}</p>
+
+                <ul className="flex flex-wrap gap-2 pt-2">
+                  {work.tags.map((tag) => (
+                    <li
+                      key={tag}
+                      className="bg-stone-200 px-2 py-1 rounded-xs transition-colors duration-700 hover:duration-150 ease-in-out hover:bg-stone-300"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex gap-4 pt-4 md:mt-auto">
+                  <a
+                    href={work.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-black hover:text-pink-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+                  >
+                    <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95 underline underline-offset-3">
+                      Visit Site
+                    </span>
+                  </a>
+
+                  <a
+                    href={work.codebaseUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-black hover:text-pink-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+                  >
+                    <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95 underline underline-offset-3">
+                      Code
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black pb-24 pt-6">
-        <h2 className="font-semibold">OTHER PROJECTS</h2>
+        <div className="flex flex-col md:flex-row gap-2">
+          <h2 className="font-semibold">PROJECTS</h2>
+          <p className="text-gray-400 md:pl-2 md:border-l md:border-black">
+            DESIGN CONCEPTS AND PAST PROJECTS
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 pt-6 gap-18">
+          {projects.map((proj) => (
+            <div className="flex flex-col gap-1" key={proj.id}>
+              <div className="h-62 w-full bg-stone-500" />
+
+              <div className="flex flex-col lg:grow">
+                <h3 className="font-fle text-2xl lg:text-3xl pt-2">
+                  {proj.title}
+                </h3>
+
+                <p className="pt-2">{proj.description}</p>
+
+                <ul className="flex flex-wrap gap-2 pt-2">
+                  {proj.tags.map((tag) => (
+                    <li
+                      key={tag}
+                      className="bg-stone-200 px-2 py-1 rounded-xs transition-colors duration-700 hover:duration-150 ease-in-out hover:bg-stone-300"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex gap-4 pt-4 md:mt-auto">
+                  <Link
+                    href={`/case-studies/${proj.slug}`}
+                    className="font-semibold text-black hover:text-pink-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+                  >
+                    <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95 underline underline-offset-3">
+                      Case Study
+                    </span>
+                  </Link>
+
+                  {proj.url != "" && (
+                    <a
+                      href={proj.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-black hover:text-pink-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+                    >
+                      <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95 underline underline-offset-3">
+                        GitHub
+                      </span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="xl:max-w-300 2xl:max-w-400 xl:mx-auto pb-24 pt-6">
         <h2 className="font-semibold">ABOUT CRISTIAN</h2>
 
-        <div className="grid grid-flow-col auto-cols-fr grid-rows-3 md:grid-rows-2 lg:grid-rows-1 pt-6 gap-18">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-6 gap-18">
           <div className="flex flex-col gap-4">
             <p>
               I’m Cristian, a design-forward frontend engineer in San Diego, CA,
