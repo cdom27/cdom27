@@ -5,11 +5,23 @@ export default function Footer() {
     <footer className="px-4 sm:px-12 pb-2 sm:pb-6">
       <div className="flex flex-col lg:flex-row justify-between gap-6 pt-2 sm:pt-6 xl:max-w-300 2xl:max-w-400 xl:mx-auto border-t border-black">
         <Link href="/" className="group flex items-center gap-2">
-          <img
-            src="/logo.svg"
-            alt="Cristian Dominguez Logo"
-            className="w-10 h-5.5 transition-transform duration-150 ease-in-out origin-left group-hover:scale-x-110 group-active:scale-x-95"
-          />
+          <svg
+            width="44"
+            height="22"
+            viewBox="0 0 44 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-10 h-5.5 stroke-black transition-transform duration-150 ease-in-out origin-left group-hover:scale-x-110 group-active:scale-x-95"
+          >
+            <rect
+              x="2.5"
+              y="2.5"
+              width="39"
+              height="17"
+              rx="8.5"
+              strokeWidth="5"
+            />
+          </svg>
 
           <span className="font-semibold text-lg transition-transform duration-150 ease-in-out group-hover:translate-x-1">
             Cristian Dominguez
