@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CellGrid from "./_components/ui/cell-grid";
 import Image from "next/image";
-import { projects } from "./lib/utils/projects";
+import { projects } from "./_lib/utils/projects";
 import UNEARTH from "../public/unearth.png";
 
 const work = [

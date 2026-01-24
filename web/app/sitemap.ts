@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { projects } from "./lib/utils/projects";
+import { projects } from "./_lib/utils/projects";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://cidominguez.com";

@@ -1,6 +1,6 @@
-import COLONY from "../public/colony.png";
-import ADE from "../public/ade.png";
-import TENKA from "../public/tenka.png";
+import COLONY from "../../../public/colony.png";
+import ADE from "../../../public/ade.png";
+import TENKA from "../../../public/tenka.png";
 
 export const projects = [
   {
