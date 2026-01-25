@@ -91,7 +91,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Header />
-        <main className="min-h-screen px-4 sm:px-12 pt-6">{children}</main>
+        <main className="min-h-screen px-4 sm:px-12 pt-6 selection:bg-indigo-100 selection:text-indigo-600">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
