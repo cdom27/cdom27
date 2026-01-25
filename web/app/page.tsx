@@ -150,7 +150,7 @@ export default function Home() {
                     src={proj.imgSrc}
                     alt={`${proj.title} designs on various devices`}
                     className="h-62 w-full object-cover transition-all hover:scale-110 hover:rotate-2 duration-700 ease-in-out"
-                    fetchPriority="high"
+                    priority
                     height={2000}
                     width={2000}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
