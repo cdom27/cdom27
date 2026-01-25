@@ -151,7 +151,6 @@ export default function CellGrid() {
     };
   }, [grid]);
 
-  // Show skeleton while initializing
   if (!isInitialized || grid.length === 0) {
     return (
       <div className="w-full h-62.5 max-h-62.5 grid grid-cols-8 grid-rows-10 gap-0">
@@ -180,11 +179,7 @@ export default function CellGrid() {
           key={cell.id}
           onMouseEnter={() => setHoveredId(cell.id)}
           onMouseLeave={() => setHoveredId("")}
-          className={`${cell.color} transition-all duration-700 hover:duration-0 cursor-pointer ${
-            hoveredId === cell.id
-              ? "hover:scale-y-150 hover:z-20"
-              : "group-hover:bg-stone-100 group-hover:m-0.5 group-hover:rounded-xs"
-          } ${
+          className={`${cell.color} transition-all duration-700 hover:duration-0 cursor-pointer hover:m-0.5 hover:rounded-md hover:scale-80 ${
             visibleCells.has(cell.id)
               ? "opacity-100 scale-100"
               : "opacity-0 scale-75"
