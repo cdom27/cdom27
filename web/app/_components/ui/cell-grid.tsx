@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useLayoutEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
 
 const TAILWIND_COLORS = [
   "bg-purple-dark",
@@ -33,6 +33,7 @@ export default function CellGrid() {
   const [rowHeights, setRowHeights] = useState<string[]>([]);
   const [visibleCells, setVisibleCells] = useState<Set<string>>(new Set());
   const [isInitialized, setIsInitialized] = useState(false);
+  const previousWidthRef = useRef<number>(0);
 
   const generateGrid = (numCols: number, numRows: number) => {
     const newColWidths = Array(numCols)
@@ -71,6 +72,13 @@ export default function CellGrid() {
   useLayoutEffect(() => {
     const updateGrid = () => {
       const width = window.innerWidth;
+
+      if (width === previousWidthRef.current) {
+        return;
+      }
+
+      previousWidthRef.current = width;
+
       let numCols = 8;
       let numRows = 10;
 
