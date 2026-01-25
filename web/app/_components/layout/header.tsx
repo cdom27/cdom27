@@ -124,11 +124,11 @@ export default function Header() {
       {/* mobile nav layouts */}
 
       <div
-        className={`fixed inset-0 transition-opacity duration-500 ease-in-out bg-black/15 ${open ? "opacity-100 delay-100" : "opacity-0 pointer-events-none"}`}
+        className={`z-10 fixed inset-0 transition-opacity duration-500 ease-in-out bg-black/15 ${open ? "opacity-100 delay-100" : "opacity-0 pointer-events-none"}`}
       />
 
       <nav
-        className={`bg-white fixed inset-x-0 top-0 px-4 sm:px-12 pt-2 pb-6 sm:pt-6 transition-transform duration-500 ease-in-out
+        className={`z-10 bg-white fixed inset-x-0 top-0 px-4 sm:px-12 pt-2 pb-6 sm:pt-6 transition-transform duration-500 ease-in-out
         ${open ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="flex justify-between items-center">
