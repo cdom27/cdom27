@@ -1,3 +1,4 @@
+import ImageWithVideo from "@/app/_components/ui/video-player";
 import { studies } from "@/app/_lib/utils/case-studies";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -16,7 +17,7 @@ export default async function CaseStudy({
     <>
       <div className="xl:max-w-300 2xl:max-w-400 xl:mx-auto pb-24">
         <div className="flex flex-col lg:flex-row gap-6">
-          <aside className="w-full lg:w-2/5 2xl:w-1/3 lg:sticky 2xl:pr-6 lg:top-6 lg:self-start min-h-96 lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto pb-24">
+          <aside className="w-full lg:w-1/2 lg:sticky lg:pr-12 lg:top-6 lg:self-start min-h-96 lg:max-h-[calc(100vh-3rem)] lg:overflow-y-auto pb-24">
             <h1 className="font-fle text-2xl lg:text-5xl">
               {study.project.title}
             </h1>
@@ -57,7 +58,7 @@ export default async function CaseStudy({
             </div>
           </aside>
 
-          <div className="w-full lg:w-3/5 2xl:w-2/3 min-h-96">
+          <div className="w-full lg:w-1/2 min-h-96">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
               {study.images.map((img, index) => (
                 <div
@@ -68,16 +69,17 @@ export default async function CaseStudy({
                       : "xl:col-span-1"
                   }
                 >
-                  <Image
+                  <ImageWithVideo
                     id={img.id}
                     src={img.src}
                     alt={img.alt}
                     width={img.width}
                     height={img.height}
+                    videoSrc={img.videoSrc}
+                    videoFallback={img.videoFallback}
                     sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 60vw, 40vw"
                     loading={index === 0 ? "eager" : "lazy"}
                     quality={90}
-                    className="w-full h-auto object-cover"
                   />
                 </div>
               ))}

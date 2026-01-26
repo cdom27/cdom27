@@ -1,5 +1,4 @@
 import { projects } from "./projects";
-import YO from "@/public/yo.jpg";
 
 export const studies = [
   {
@@ -67,46 +66,31 @@ export const studies = [
     ],
     images: [
       {
-        id: "hero",
-        src: YO,
-        alt: "Landing page",
-        width: 2674,
-        height: 1319,
+        id: "landing",
+        src: "/ade/landing/thumbnail.jpg",
+        alt: "Ariel view of the San Diego coastline",
+        videoSrc: "/ade/landing/720.webm",
+        videoFallback: "/ade/landing/1080.mp4",
+        width: 2560,
+        height: 1440,
       },
       {
-        id: "competitive-analysis",
-        src: YO,
-        alt: "Competitor analysis",
-        width: 2674,
-        height: 1319,
+        id: "homes",
+        src: "/ade/homes/thumbnail.jpg",
+        alt: "Driving through San Diego",
+        videoSrc: "/ade/homes/720.webm",
+        videoFallback: "/ade/homes/1080.mp4",
+        width: 2560,
+        height: 1440,
       },
       {
-        id: "research-dense-nav",
-        src: YO,
-        alt: "Dense navigation",
-        width: 2674,
-        height: 1319,
-      },
-      {
-        id: "competitive-analysis2",
-        src: YO,
-        alt: "Competitor analysis",
-        width: 2674,
-        height: 1319,
-      },
-      {
-        id: "competitive-analysis1",
-        src: YO,
-        alt: "Competitor analysis",
-        width: 2674,
-        height: 1319,
-      },
-      {
-        id: "competitive-analysis13",
-        src: YO,
-        alt: "Competitor analysis",
-        width: 2674,
-        height: 1319,
+        id: "details",
+        src: "/ade/listing/thumbnail.jpg",
+        alt: "Ariel view of home in San Diego",
+        videoSrc: "/ade/listing/720.webm",
+        videoFallback: "/ade/listing/1080.mp4",
+        width: 2560,
+        height: 1440,
       },
     ],
   },
