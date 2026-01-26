@@ -92,6 +92,15 @@ export const studies = [
         width: 2560,
         height: 1440,
       },
+      {
+        id: "mobile",
+        src: "/ade/mobile/thumbnail.jpg",
+        alt: "Ariel view of home in San Diego",
+        videoSrc: null,
+        videoFallback: null,
+        width: 2560,
+        height: 1440,
+      },
     ],
   },
 ];

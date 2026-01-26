@@ -1,6 +1,5 @@
 import ImageWithVideo from "@/app/_components/ui/video-player";
 import { studies } from "@/app/_lib/utils/case-studies";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export default async function CaseStudy({

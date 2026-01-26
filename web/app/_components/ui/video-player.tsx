@@ -8,8 +8,8 @@ interface ImageWithVideoProps {
   alt: string;
   width: number;
   height: number;
-  videoSrc?: string;
-  videoFallback?: string;
+  videoSrc: string | null;
+  videoFallback: string | null;
   sizes: string;
   loading?: "eager" | "lazy";
   quality?: number;
