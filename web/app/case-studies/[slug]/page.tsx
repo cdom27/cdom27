@@ -76,9 +76,8 @@ export default async function CaseStudy({
                     height={img.height}
                     videoSrc={img.videoSrc}
                     videoFallback={img.videoFallback}
-                    sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 60vw, 40vw"
+                    sizes="100vw"
                     loading={index === 0 ? "eager" : "lazy"}
-                    quality={90}
                   />
                 </div>
               ))}

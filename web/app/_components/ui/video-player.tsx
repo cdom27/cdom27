@@ -12,7 +12,6 @@ interface ImageWithVideoProps {
   videoFallback: string | null;
   sizes: string;
   loading?: "eager" | "lazy";
-  quality?: number;
 }
 
 export default function ImageWithVideo({
@@ -25,7 +24,6 @@ export default function ImageWithVideo({
   videoFallback,
   sizes,
   loading,
-  quality = 90,
 }: ImageWithVideoProps) {
   return (
     <div className="relative group">
@@ -37,7 +35,7 @@ export default function ImageWithVideo({
         height={height}
         sizes={sizes}
         loading={loading}
-        quality={quality}
+        quality={100}
         className="w-full h-auto object-cover"
       />
 
