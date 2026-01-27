@@ -28,7 +28,7 @@ export default function Home() {
           {work.map((work) => (
             <div className="flex flex-col gap-1" key={work.id}>
               {work.imgSrc ? (
-                <div className="overflow-hidden">
+                <div className="overflow-hidden relative">
                   <Image
                     src={work.imgSrc}
                     alt={`${work.title} designs on various devices`}
@@ -38,6 +38,11 @@ export default function Home() {
                     width={2000}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
+                  {work.status && (
+                    <span className="absolute top-0 right-0 bg-black bg-opacity-50 text-white px-2 py-1">
+                      {work.status}
+                    </span>
+                  )}
                 </div>
               ) : (
                 <div className="h-82 w-full bg-stone-500" />
