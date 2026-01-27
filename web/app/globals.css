@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Fle";
+    src: url("./_fonts/Fle-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./_fonts/Inter-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./_fonts/Inter-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --font-fle: "Fle", serif;
+    --font-inter: "Inter", sans-serif;
+
+    --color-purple-dark: #413080;
+    --color-green-dark: #2d7135;
+    --color-orange-bright: #f84416;
+    --color-cream-warm: #fbf3e3;
+    --color-pink-light: #f9b8d9;
+    --color-brown-gray: #92756d;
+    --color-green-light: #9fc898;
+    --color-pink-coral: #f75e74;
+    --color-mint: #c2d6d5;
+    --color-purple-light: #9f96dd;
+    --color-blue-medium: #3c7cd2;
+    --color-green-medium: #50a163;
+    --color-yellow: #f5b939;
+    --color-teal: #207b88;
+    --color-yellow-pale: #f0d290;
+    --color-brown-dark: #2b1617;
+}
