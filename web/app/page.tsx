@@ -11,8 +11,8 @@ export default function Home() {
         <CellGrid />
 
         <h1 className="font-fle text-2xl lg:text-5xl 2xl:text-6xl pt-6">
-          Cristian Dominguez is a design-forward Frontend Engineer shipping
-          clean, responsive interfaces with production-grade systems.
+          Cristian Dominguez is a Fullstack Developer shipping clean, responsive
+          interfaces with production-grade systems.
         </h1>
       </div>
 
@@ -208,13 +208,13 @@ export default function Home() {
             <h3 className="font-fle text-2xl lg:text-3xl">Experience</h3>
 
             <div className="flex flex-col gap-1 pt-6">
-              <h4 className="font-semibold text-lg">Mandate Impact</h4>
+              <h4 className="font-semibold text-lg">Mandate Records</h4>
 
               <ul>
                 <li>
-                  <em>Web Design & Developer Intern</em>
+                  <em>Web Design & Developer - Contract</em>
                 </li>
-                <li>Feb. 2026 - Present</li>
+                <li>Jan. 2026 - Present</li>
               </ul>
             </div>
 
