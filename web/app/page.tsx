@@ -16,7 +16,10 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black pb-24 pt-6">
+      <div
+        id="work"
+        className="xl:max-w-300 2xl:max-w-400 xl:mx-auto border-b border-black pb-24 pt-6"
+      >
         <div className="flex flex-col md:flex-row gap-2">
           <h2 className="font-semibold">INDEPENDENT WORK</h2>
           <p className="text-gray-400 md:pl-2 md:border-l md:border-black">
@@ -171,7 +174,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="xl:max-w-300 2xl:max-w-400 xl:mx-auto pb-24 pt-6">
+      <div
+        id="about"
+        className="xl:max-w-300 2xl:max-w-400 xl:mx-auto pb-24 pt-6"
+      >
         <h2 className="font-semibold">ABOUT CRISTIAN</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-6 gap-18">
