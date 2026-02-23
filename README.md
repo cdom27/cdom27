@@ -2,12 +2,11 @@
 ```
 > Hi there
 > AS in Web Development & AA in Interaction Design
-> Returning BS in Software Engineering
 >
-> Product-focused Engineer merging design and UX thinking with solid backend architecture.
+> Fullstack Engineer merging design and UX thinking with solid backend architecture.
 > Typescript, React, Node.js, Go, PostgreSQL
 >
-> Reading (classics & tech) and ceramics when I'm not programming
+> Books (classics & tech) and ceramics when I'm not programming
 ```
 
 
