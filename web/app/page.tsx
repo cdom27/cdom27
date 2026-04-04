@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-2">
           <h2 className="font-semibold">INDEPENDENT WORK</h2>
           <p className="text-gray-400 md:pl-2 md:border-l md:border-black">
-            ACTIVELY MAINTAINING CODE AND DESIGNING UI
+            FULLY DESIGNED AND DEVELOPED
           </p>
         </div>
 
@@ -72,16 +72,18 @@ export default function Home() {
                 </ul>
 
                 <div className="flex gap-4 pt-4 md:mt-auto">
-                  <a
-                    href={work.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-black hover:text-pink-500 transition-colors duration-700 hover:duration-150 ease-in-out"
-                  >
-                    <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95 underline underline-offset-3">
-                      Visit Site
-                    </span>
-                  </a>
+                  {work.liveUrl && (
+                    <a
+                      href={work.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-semibold text-black hover:text-pink-500 transition-colors duration-700 hover:duration-150 ease-in-out"
+                    >
+                      <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95 underline underline-offset-3">
+                        Visit Site
+                      </span>
+                    </a>
+                  )}
 
                   <a
                     href={work.codebaseUrl}
@@ -90,7 +92,7 @@ export default function Home() {
                     className="font-semibold text-black hover:text-pink-500 transition-colors duration-700 hover:duration-150 ease-in-out"
                   >
                     <span className="inline-block transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95 underline underline-offset-3">
-                      Code
+                      View Code
                     </span>
                   </a>
                 </div>

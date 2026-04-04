@@ -6,7 +6,7 @@ export const work = [
     id: 0,
     imgSrc: UNEARTH,
     title: "Unearth News",
-    status: null,
+    status: "Overhaul in progress",
     duration: "Sept. 2025 - Present",
     description: `AI-powered news analysis with a mobile-first, accessible UI. Users
     paste a URL to get a clear breakdown of claims/framing plus
@@ -19,7 +19,7 @@ export const work = [
       "GCP",
       "Docker",
     ],
-    liveUrl: "https://unearth.news",
+    liveUrl: null,
     codebaseUrl: "https://github.com/cdom27/unearth_news",
   },
   {
@@ -39,7 +39,7 @@ export const work = [
       "GCP",
       "Docker",
     ],
-    liveUrl: "https://openart.work",
+    liveUrl: null,
     codebaseUrl: "https://github.com/cdom27/art-api",
   },
 ];
