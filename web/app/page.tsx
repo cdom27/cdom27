@@ -259,7 +259,7 @@ export default function Home() {
                 <li>
                   <em>Associate of Science in Web Development</em>
                 </li>
-                <li>Aug. 2020 - Jun. 2023</li>
+                <li>Completed</li>
               </ul>
             </div>
           </div>
