@@ -200,13 +200,13 @@ export default function Home() {
             <p>
               You can reach me at{" "}
               <a
-                href="mailto:cdom27@outlook.com"
+                href="mailto:cristian@swe.cd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold hover:text-indigo-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
                 <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out origin-left hover:scale-105 active:scale-95">
-                  cdom27@outlook.com
+                  cristian@swe.cd
                 </span>
               </a>
             </p>
@@ -216,41 +216,41 @@ export default function Home() {
             <h3 className="font-fle text-2xl lg:text-3xl">Experience</h3>
 
             <div className="flex flex-col gap-1 pt-6">
-              <h4 className="font-semibold text-lg">Mandate Records</h4>
+              <h4 className="font-semibold text-lg">Mandate Enterprises</h4>
 
               <ul>
                 <li>
-                  <em>Web Design & Developer - Contract</em>
+                  <em>Web Design & Developer</em>
                 </li>
-                <li>Jan. 2026 - Present</li>
+                <li>May 2026 - Present</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-1 pt-6">
+              <h4 className="font-semibold text-lg">Pacific Soul Jazz Festival</h4>
+
+              <ul>
+                <li>
+                  <em>Web Developer - Contract</em>
+                </li>
+                <li>Jun. 2026 - Jul. 2026</li>
               </ul>
             </div>
 
             <div className="flex flex-col gap-1 pt-4">
-              <h4 className="font-semibold text-lg">Unearth</h4>
+              <h4 className="font-semibold text-lg">Mandate Enterprises</h4>
 
               <ul>
                 <li>
-                  <em>Independent Full-Stack Developer</em>
+                  <em>Web Design & Developer - Intern</em>
                 </li>
-                <li>Sept. 2025 - Present</li>
+                <li>Jan. 2026 - May 2026</li>
               </ul>
             </div>
           </div>
 
           <div className="lg:ml-auto">
             <h3 className="font-fle text-2xl lg:text-3xl">Education</h3>
-
-            <div className="flex flex-col gap-1 pt-6">
-              <h4 className="font-semibold text-lg">San Diego City College</h4>
-
-              <ul>
-                <li>
-                  <em>Associate of Arts in Interaction Design</em>
-                </li>
-                <li>Present</li>
-              </ul>
-            </div>
 
             <div className="flex flex-col gap-1 pt-4">
               <h4 className="font-semibold text-lg">San Diego Mesa College</h4>

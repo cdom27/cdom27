@@ -71,13 +71,13 @@ export default function Header() {
 
             <li>
               <a
-                href="mailto:cdom27@outlook.com"
+                href="mailto:cristian@swe.cd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-semibold hover:text-indigo-500 transition-colors duration-700 hover:duration-150 ease-in-out"
               >
                 <span className="inline-block underline underline-offset-3 transition-transform duration-150 ease-in-out hover:scale-105 active:scale-95">
-                  CDOM27@OUTLOOK.COM
+                  CRISTIAN@SWE.CD
                 </span>
               </a>
             </li>
