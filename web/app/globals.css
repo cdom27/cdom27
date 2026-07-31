@@ -45,3 +45,7 @@
     --color-yellow-pale: #f0d290;
     --color-brown-dark: #2b1617;
 }
+
+*, html {
+    scroll-behavior: smooth !important;
+}
