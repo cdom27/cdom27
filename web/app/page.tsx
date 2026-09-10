@@ -220,7 +220,7 @@ export default function Home() {
 
               <ul>
                 <li>
-                  <em>Web Design & Developer</em>
+                  <em>Web Designer & Developer</em>
                 </li>
                 <li>May 2026 - Present</li>
               </ul>
@@ -244,7 +244,7 @@ export default function Home() {
 
               <ul>
                 <li>
-                  <em>Web Design & Developer - Intern</em>
+                  <em>Web Designer & Developer - Intern</em>
                 </li>
                 <li>Jan. 2026 - May 2026</li>
               </ul>
