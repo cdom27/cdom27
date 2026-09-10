@@ -193,8 +193,8 @@ export default function Home() {
             </p>
 
             <p>
-              Outside of work, I’m usually reading classical literature,
-              learning to cook, or reviewing the best coffee shops in my city.
+              Outside of work I’m usually reading literature &amp; philosophy,
+              studying French, or watching a film.
             </p>
 
             <p>
@@ -227,7 +227,9 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-1 pt-6">
-              <h4 className="font-semibold text-lg">Pacific Soul Jazz Festival</h4>
+              <h4 className="font-semibold text-lg">
+                Pacific Soul Jazz Festival
+              </h4>
 
               <ul>
                 <li>
@@ -254,12 +256,22 @@ export default function Home() {
 
             <div className="flex flex-col gap-1 pt-4">
               <h4 className="font-semibold text-lg">San Diego Mesa College</h4>
-
               <ul>
                 <li>
-                  <em>Associate of Science in Web Development</em>
+                  <em>A.S. in Web Development</em>
                 </li>
-                <li>Completed</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-1 pt-4">
+              <h4 className="font-semibold text-lg">
+                Western Governors University
+              </h4>
+              <ul>
+                <li>
+                  <em>B.S. in Software Engineering</em>
+                </li>
+                <li>In progress, currently on pause</li>
               </ul>
             </div>
           </div>
