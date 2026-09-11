@@ -235,7 +235,7 @@ export default function Home() {
                 <li>
                   <em>Web Developer - Contract</em>
                 </li>
-                <li>Jun. 2026 - Jul. 2026</li>
+                <li>Jun. 2026 - Sep. 2026</li>
               </ul>
             </div>
 

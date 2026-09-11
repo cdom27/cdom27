@@ -12,7 +12,7 @@ export const work = [
     paste a URL to get a clear breakdown of claims and rhetorical analysis. Originally containerized and deployed on GCP; rebuilt on Next.js/Vercel.`,
     tags: ["TypeScript", "Next.js", "PostgreSQL", "Anthropic", "Exa AI"],
     liveUrl: "https://unearth.news",
-    codebaseUrl: "https://github.com/cdom27/unearth_news",
+    codebaseUrl: "https://github.com/cdom27/unearth",
   },
   {
     id: 1,
@@ -33,6 +33,6 @@ export const work = [
       "Docker",
     ],
     liveUrl: null,
-    codebaseUrl: "https://github.com/cdom27/art-api",
+    codebaseUrl: "https://github.com/cdom27/open-artwork",
   },
 ];
