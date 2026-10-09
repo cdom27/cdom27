@@ -222,7 +222,18 @@ export default function Home() {
                 <li>
                   <em>Web Designer & Developer</em>
                 </li>
-                <li>May 2026 - Present</li>
+                <li>Jan. 2026 - Present</li>
+              </ul>
+            </div>
+
+            <div className="flex flex-col gap-1 pt-6">
+              <h4 className="font-semibold text-lg">I.G.A.M.M. Conference</h4>
+
+              <ul>
+                <li>
+                  <em>Web Designer & Developer - Contract</em>
+                </li>
+                <li>Sep. 2026</li>
               </ul>
             </div>
 
@@ -236,17 +247,6 @@ export default function Home() {
                   <em>Web Developer - Contract</em>
                 </li>
                 <li>Jun. 2026 - Sep. 2026</li>
-              </ul>
-            </div>
-
-            <div className="flex flex-col gap-1 pt-4">
-              <h4 className="font-semibold text-lg">Mandate Enterprises</h4>
-
-              <ul>
-                <li>
-                  <em>Web Designer & Developer - Intern</em>
-                </li>
-                <li>Jan. 2026 - May 2026</li>
               </ul>
             </div>
           </div>

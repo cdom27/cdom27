@@ -1,5 +1,5 @@
 import UNEARTH from "@/public/un.png";
-import OPEN_ARTWORK from "@/public/openartwork.jpg";
+import OPEN_ARTWORK from "@/public/openartwork.png";
 
 export const work = [
   {
